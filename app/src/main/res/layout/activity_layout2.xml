@@ -239,6 +239,7 @@
     </LinearLayout>
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="342dp"
         android:layout_height="87dp"
         android:layout_marginStart="35dp"
@@ -247,7 +248,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -331,5 +332,160 @@
             </LinearLayout>
         </LinearLayout>
     </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2">
+
+        <TextView
+            android:id="@+id/precioBebidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="6.800 COP"
+            android:textColor="@color/gris"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="119dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <Button
+            android:id="@+id/btnComplementos"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Complementos"
+            android:textColor="@color/gris"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/rojo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="342dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <LinearLayout
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/papaCallejera"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Papa Callejera" />
+
+            <CheckBox
+                android:id="@+id/suero"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Suero Costeño" />
+
+            <CheckBox
+                android:id="@+id/pepinillos"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Pepinillos" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Queso Fundido" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/frijol"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Frijol Refrito" />
+
+            <CheckBox
+                android:id="@+id/guacamole"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Guacamole" />
+
+            <CheckBox
+                android:id="@+id/tocineta"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Tocineta Picada" />
+
+            <CheckBox
+                android:id="@+id/cebolla"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:buttonTint="#F37F0C"
+                android:text="Cebolla Grillé" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/precioComplementos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="4.200 COP"
+            android:textColor="@color/gris"
+            android:textSize="15dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
