@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout2"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="125dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="575dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="136dp"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/salsalogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="172dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="574dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textAdicion"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="ADICIONES"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="550dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnPapas"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Porción de papas"
+            android:textColor="@color/gris"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/rojo" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="342dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="410dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPapas1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/papas1" />
+
+                <RadioButton
+                    android:id="@+id/rbPapas1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papas normales"
+                    android:textSize="15dp"
+                    android:textColor="@color/gris"
+                    android:layout_marginLeft="5dp"
+                    android:buttonTint="#F37F0C"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPapas2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/papas2" />
+
+                <RadioButton
+                    android:id="@+id/rbPapas2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papas Rizadas"
+                    android:textSize="15dp"
+                    android:textColor="@color/gris"
+                    android:layout_marginLeft="5dp"
+                    android:buttonTint="#F37F0C"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPapas3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/papas3" />
+
+                <RadioButton
+                    android:id="@+id/rbPapas3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papas en Cascos"
+                    android:textSize="15dp"
+                    android:textColor="@color/gris"
+                    android:layout_marginLeft="5dp"
+                    android:buttonTint="#F37F0C"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

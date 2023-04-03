@@ -22,11 +22,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/logo"
             android:layout_width="136dp"
             android:layout_height="86dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/sol" />
+            app:srcCompat="@drawable/logo" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -44,21 +45,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/nombreApp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:gravity="center"
-            android:text="Turismo SunShine"
+            android:text="BIG BURGUER"
             android:textColor="@color/black"
             android:textSize="25dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/titulo2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Agencia de turismo"
+            android:text="Delivery app"
             android:textColor="@color/gris"
             android:textSize="20dp" />
     </LinearLayout>
@@ -78,10 +79,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nuestros planes"
+            android:text="Nuestro Menú"
             android:textColor="@color/black"
             android:textSize="20dp" />
     </LinearLayout>
@@ -109,11 +110,11 @@
             android:textColor="@color/gris"
             android:textSize="12dp"
             app:cornerRadius="20dp"
-            app:strokeColor="@color/naranja" />
+            app:strokeColor="@color/rojo" />
     </LinearLayout>
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgburguers"
         android:layout_width="346dp"
         android:layout_height="393dp"
         android:layout_marginStart="40dp"
@@ -132,12 +133,12 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/img1"
                 android:layout_width="6dp"
                 android:layout_height="110dp"
                 android:layout_marginLeft="15dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/cartagena" />
+                app:srcCompat="@drawable/burguer1" />
 
             <LinearLayout
                 android:layout_width="60dp"
@@ -148,20 +149,20 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/rbCartagena"
+                    android:id="@+id/rbSencilla"
                     android:layout_width="wrap_content"
                     android:layout_height="37dp"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="5dp"
                     android:buttonTint="#F37F0C"
-                    android:text="Cartagena" />
+                    android:gravity="center"
+                    android:text="Hamburguesa sencilla" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/descripcionSencilla"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Viaje de 2 días con estadia y alimentación incluída" />
+                    android:text="Carne de res, con verduras y salsas en pan ajonjolí" />
             </LinearLayout>
 
             <LinearLayout
@@ -170,15 +171,27 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textVie"
+                    android:id="@+id/precioSencilla"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
                     android:gravity="center"
-                    android:text="750.000 COP"
+                    android:text="20.000 COP"
                     android:textColor="@color/verde"
                     android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/cantSencilla"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/naranjaC"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="number"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -190,12 +203,12 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageViewLet"
+                android:id="@+id/img2"
                 android:layout_width="6dp"
                 android:layout_height="110dp"
                 android:layout_marginLeft="15dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/leticia" />
+                app:srcCompat="@drawable/burguer2" />
 
             <LinearLayout
                 android:layout_width="60dp"
@@ -206,20 +219,20 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/rbLeticia"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/rbTocineta"
+                    android:layout_width="match_parent"
                     android:layout_height="37dp"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="5dp"
                     android:buttonTint="#F37F0C"
-                    android:text="Leticia" />
+                    android:gravity="center"
+                    android:text="Clasica de tocineta" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/desTocineta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Viaje de 3 días con estadia y alimentación incluída" />
+                    android:text="Dos carnes a la parrilla, tocineta, queso mozzarella" />
             </LinearLayout>
 
             <LinearLayout
@@ -228,15 +241,27 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/precioTocineta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
                     android:gravity="center"
-                    android:text="800.000 COP"
+                    android:text="33.900 COP"
                     android:textColor="@color/verde"
                     android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/cantTocineta"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/naranjaC"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="number"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -248,12 +273,12 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageViewCa"
+                android:id="@+id/img3"
                 android:layout_width="6dp"
                 android:layout_height="110dp"
                 android:layout_marginLeft="15dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/cana" />
+                app:srcCompat="@drawable/burguer3" />
 
             <LinearLayout
                 android:layout_width="60dp"
@@ -264,20 +289,20 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/rbPuntaCana"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/rbgrille"
+                    android:layout_width="match_parent"
                     android:layout_height="37dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="5dp"
                     android:buttonTint="#F37F0C"
-                    android:text="Punta Cana" />
+                    android:gravity="center"
+                    android:text="Hamburguesa Grillé" />
 
                 <TextView
-                    android:id="@+id/textV"
+                    android:id="@+id/descGrille"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Viaje de 1 semana con estadia y alimentación incluída" />
+                    android:text="Carne a la parrilla, tocineta, queso americano, cebolla grillé" />
             </LinearLayout>
 
             <LinearLayout
@@ -286,15 +311,27 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textV2"
+                    android:id="@+id/precioGrille"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
                     android:gravity="center"
-                    android:text="950.000 COP"
+                    android:text="31.500 COP"
                     android:textColor="@color/verde"
-                    android:textSize="15dp" />
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/cantGrille"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/naranjaC"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="number"/>
             </LinearLayout>
         </LinearLayout>
     </RadioGroup>
@@ -316,9 +353,10 @@
             android:id="@+id/btnSiguiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/rojo"
+            android:onClick="irASegundaPag"
             android:text="Siguente"
-            app:cornerRadius="50dp"
-            android:backgroundTint="@color/naranja"
-            android:layout_marginTop="10dp"/>
+            app:cornerRadius="50dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
