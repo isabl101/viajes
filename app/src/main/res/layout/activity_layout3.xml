@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout3"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="110dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="613dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ubicacion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="530dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <Button
+            android:id="@+id/btnSucursales"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sucursales"
+            android:textColor="@color/gris"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/rojo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="384dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="327dp"
+        android:orientation="vertical"
+        android:background="@color/naranjaC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mapa" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="258dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+        <Button
+            android:id="@+id/btnDireccion"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Direccion"
+            android:textColor="@color/gris"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/rojo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="125dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+        <Button
+            android:id="@+id/btnSiguiente3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/rojo"
+            android:onClick="irATerceraPag"
+            android:text="Siguente"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="341dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+        <TextView
+            android:id="@+id/resDomicilio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="¿Retirar en la tienda?"
+            android:textColor="@color/gris"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/naranja"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/naranja"
+            android:text="No" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="342dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/naranjaC"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:hint="Ingresa tu dirección:"
+            android:textColor="@color/gris"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="26dp"
+        android:background="@color/naranjaC"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+        <EditText
+            android:id="@+id/etPropina"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:hint="Propina para el domiciliario:"
+            android:textColor="@color/gris"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
